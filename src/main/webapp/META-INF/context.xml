@@ -1,0 +1,12 @@
+<Context>
+    <Resource name="jdbc/internetshop"
+              auth="Container"
+              type="javax.sql.DataSource"
+              maxActive="400"
+              maxIdle="-1"
+              maxWait="1000"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              username="root" password="1111"
+              defaultTransactionIsolation="READ_COMMITTED"
+              url="jdbc:mysql://127.0.0.1:3306/internetshop"/>
+</Context>

@@ -1,0 +1,41 @@
+<%@ taglib prefix="login" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="selector" tagdir="/WEB-INF/tags" %>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><fmt:message key="teapot_shop" bundle="${lang}"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" >
+        
+            <li class="nav-item active">
+                <a class="nav-link" href="/"><fmt:message key="logo" bundle="${lang}"/><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="registration"><fmt:message key="registration" bundle="${lang}"/></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="items"><fmt:message key="teapots" bundle="${lang}"/></a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=""><fmt:message key="personal_account" bundle="${lang}"/></a>
+
+            </li>
+            <li class="nav-item">
+        <a class="nav-link" href="cart"><img src="images/cart.png" width="30" height="30" ><fmt:message key="cart" bundle="${lang}"/> </a>
+        </li>
+
+                <li class="nav-item">
+                    <login:login />
+
+            </li>
+<li class="nav-item">
+<selector:selector/>
+</li>
+        </ul>
+    </div>
+</nav>

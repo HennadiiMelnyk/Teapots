@@ -1,0 +1,23 @@
+<taglib version="2.0" xmlns="http://java.sun.com/xml/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+    <tlib-version>2.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>cpt</short-name>
+    <uri>teapotstore</uri>
+    <description>
+        This tag library contains several tag extensions
+        useful for formatting content for HTML.
+    </description>
+    <tag>
+        <name>captcha</name>
+        <tag-class>com.epam.melnyk.customtags.CaptchaTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>captchaId</name>
+            <require>false</require>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+    </tag>
+</taglib>

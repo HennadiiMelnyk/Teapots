@@ -1,0 +1,10 @@
+.customsize{
+    height: 300px;
+}
+input[type=password]:not(.browser-default), input[type=email]:not(.browser-default){width:auto;}
+
+#filter {
+    margin: 0;
+    width:15%;
+    float: left;
+}
